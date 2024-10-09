@@ -1,37 +1,109 @@
-# Roxiler_transaction-dashboard
-Transaction Dashboard App  A simple and intuitive dashboard app for tracking and visualizing small transactions within a GitHub repository. This app provides a centralized platform for developers to monitor and manage their transactions, making it easier to stay on top of their finances.
-# Frontend
+# Roxiler Transaction Dashboard 📊
 
-This frontend project is designed to interact with the backend APIs created for managing and analyzing product transactions. The frontend provides a user interface with a table and charts based on the fetched data from the backend.
+Welcome to the **Transaction Dashboard App** — your go-to solution for tracking and visualizing transactions! This intuitive dashboard provides a centralized platform to monitor and analyze your financial activities effectively.
 
-## Usage
+![dashboard](https://github.com/user-attachments/assets/0adfc10b-654c-45c7-b287-cde346c2e319)
 
-To use the frontend application, follow the instructions below:
+## Features 🚀
 
-1. Ensure the backend API is deployed and accessible.
-2. Clone the frontend repository to your local machine.
-3. Install the necessary dependencies using the package manager of your choice (e.g., npm or yarn).
-4. npm install or yarn install
+### 📋 Transactions Table
+- **Monthly View**: Select any month (January to December) to view its transactions
+- **Smart Search**: Filter transactions by title, description, or price
+- **Pagination**: Easily navigate through transaction pages
 
-## Features
+### 📊 Statistics at a Glance
+- **Total Sales**: Track monthly sales figures
+- **Inventory Status**: Monitor sold vs. unsold items
+- **Price Range Analysis**: Visualize items sold across different price brackets
 
-### Transactions Table
+### 📈 Interactive Visualizations
+- Dynamic bar charts showing price distribution
+- Monthly comparison views
+- Real-time updates based on selected filters
 
-## Select Month Dropdown
-1. Displays January to December months as options.
-2. Defaults to March month.
-3. Allows selecting a different month to display transactions.
-## Transactions List
-1. Utilizes the transactions listing API to list transactions in a table.
-2. Displays transactions of the selected month irrespective of the year using the API.
-3. Search transaction box filters transactions based on title/description/price using the API.
-4. Clears the search box to display the initial list of transactions for the selected month using the API.
-5. Next and Previous buttons load the next and previous page data from the API.
-## Transactions Statistics
-1. Displays total sale amount, total sold items, and total not sold items for the selected month.
-2. Fetches data from the created API to populate the statistics box.
-## Transactions Bar Chart
-1. Displays a bar chart showing the price range and the number of items in that range for the selected month.
-2. Applies the selected month from the dropdown (above the table) to fetch data from the API.
+## Getting Started 💻
 
-Enjoy using the product transaction management system!
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/roxiler-dashboard.git
+cd roxiler-dashboard
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
+```bash
+npm start
+# or
+yarn start
+```
+
+## Usage Guide 📱
+
+1. **Select Month**: Use the dropdown to choose your desired month
+2. **Search Transactions**: Enter keywords in the search bar
+3. **View Statistics**: Check the statistics panel for quick insights
+4. **Explore Visualizations**: Interact with charts for detailed analysis
+
+## Screenshots 📸
+
+### Dashboard Overview
+![Transaction_table](https://github.com/user-attachments/assets/ba078952-9237-4b5c-af34-89a8cac4e610)
+
+
+### Transaction Analysis
+![Bar chart](https://github.com/user-attachments/assets/13156caa-8984-4880-b50d-a6fb9acc16b9)
+![Stactics](https://github.com/user-attachments/assets/04a19cf0-3630-4cbe-b0d3-df920ebc02b2)
+
+
+## Tech Stack 🛠️
+
+- **Frontend**: React.js
+- **State Management**: Redux
+- **UI Components**: Material-UI
+- **Charts**: Recharts
+- **Backend**: Node.js with Express
+- **Database**: MongoDB
+
+## API Documentation 📚
+
+Our RESTful API endpoints:
+
+- `GET /api/transactions`: Fetch all transactions
+- `GET /api/transactions/:month`: Get transactions for a specific month
+- `GET /api/statistics/:month`: Retrieve monthly statistics
+
+## Contributing 🤝
+
+We welcome contributions! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License ⚖️
+
+This project is licensed  - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments 👏
+
+- Thanks to all contributors
+- Inspired by modern dashboard designs
+- Built with ❤️ using React
+
+---
+
+For more information, please contact [your-email@example.com](mailto:your-email@example.com)
