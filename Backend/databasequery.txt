@@ -1,0 +1,29 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS transaction_database;
+USE transaction_database;
+
+-- Create the transactions table
+CREATE TABLE IF NOT EXISTS Transactions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  description TEXT,
+  category VARCHAR(100),
+  image VARCHAR(255),
+  sold BOOLEAN DEFAULT FALSE,
+  dateOfSale DATETIME,
+  createdAt DATETIME DEFAULT CURRENT_TIMESTAMP,
+  updatedAt DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- Create indexes for better query performance
+CREATE INDEX idx_dateOfSale ON Transactions(dateOfSale);
+CREATE INDEX idx_category ON Transactions(category);
+CREATE INDEX idx_price ON Transactions(price);
+CREATE INDEX idx_sold ON Transactions(sold);
+
+-- Optional: Create a user and grant privileges
+-- Only run these if you want to create a new user instead of using root
+-- CREATE USER 'transaction_user'@'localhost' IDENTIFIED BY 'your_password_here';
+-- GRANT ALL PRIVILEGES ON transaction_database.* TO 'transaction_user'@'localhost';
+-- FLUSH PRIVILEGES;
