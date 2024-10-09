@@ -1,0 +1,14 @@
+.barchart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9af9d4;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px auto;
+    width: 70%;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
