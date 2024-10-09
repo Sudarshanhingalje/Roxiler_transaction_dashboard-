@@ -1,3 +1,5 @@
+THESE ON ID THE Assignment given me by the Roxiler system 
+[Intern MERN Stack Coding Challenge.pdf](https://github.com/user-attachments/files/17317969/Intern.MERN.Stack.Coding.Challenge.pdf)
 # Roxiler Transaction Dashboard 📊
 
 Welcome to the **Transaction Dashboard App** — your go-to solution for tracking and visualizing transactions! This intuitive dashboard provides a centralized platform to monitor and analyze your financial activities effectively.
@@ -74,7 +76,7 @@ yarn start
 - **UI Components**: Material-UI
 - **Charts**: Recharts
 - **Backend**: Node.js with Express
-- **Database**: MongoDB
+- **Database**: MySQL
 
 ## API Documentation 📚
 
@@ -106,4 +108,7 @@ This project is licensed  - see the [LICENSE.md](LICENSE.md) file for details.
 
 ---
 
-For more information, please contact [your-email@example.com](mailto:your-email@example.com)
+
+
+
+For more information, please contact [sudarshanhingalje1@gmail.com](mailto:sudarshanhingalje1@gmail.com)
